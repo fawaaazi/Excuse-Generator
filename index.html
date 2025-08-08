@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alibi Architect</title>
+    <!--
+      Load Tailwind CSS for easy, responsive styling.
+      This CDN link provides all the necessary classes for a modern look.
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>chbskzbihvk</h1>
+<body class="bg-gradient-to-br from-indigo-50 to-purple-100 min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main container for the app, with styling for a card-like appearance -->
+    <div class="bg-white p-8 rounded-3xl shadow-2xl max-w-lg w-full text-center space-y-6">
+
+        <!-- Application Title -->
+        <h1 class="text-4xl font-bold text-gray-800 tracking-tight">Alibi Architect</h1>
+        <p class="text-gray-500 text-lg">
+            Create your perfect, absurd excuse!
+            <br>
+            നിങ്ങളുടെ അസംബന്ധമായ ഒഴിവുകഴിവ് നിർമ്മിക്കുക!
+        </p>
+
+        <!-- Language selection dropdown -->
+        <div class="flex justify-center">
+            <select id="language-select" class="p-2 border border-gray-300 rounded-lg shadow-sm text-gray-700">
+                <option value="en">English</option>
+                <option value="ml">മലയാളം</option>
+            </select>
+        </div>
+
+        <!-- Section for the dropdown menus -->
+        <div class="space-y-4 text-left">
+            <!-- Dropdown for the Core Problem -->
+            <div>
+                <label for="core-problem-select" class="block text-gray-600 font-semibold mb-2" data-en="The Core Problem" data-ml="പ്രധാന പ്രശ്നം">The Core Problem</label>
+                <select id="core-problem-select" class="w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-200 text-gray-700">
+                    <option value="" disabled selected data-en="Select a problem..." data-ml="ഒരു പ്രശ്നം തിരഞ്ഞെടുക്കുക...">Select a problem...</option>
+                    <option value="I can't come to work" data-en="I can't come to work" data-ml="എനിക്ക് ജോലിക്ക് വരാൻ കഴിയില്ല">I can't come to work</option>
+                    <option value="I forgot to buy milk" data-en="I forgot to buy milk" data-ml="ഞാൻ പാൽ വാങ്ങാൻ മറന്നു">I forgot to buy milk</option>
+                </select>
+            </div>
+
+            <!-- Dropdown for the Unfortunate Event -->
+            <div>
+                <label for="event-select" class="block text-gray-600 font-semibold mb-2" data-en="The Unfortunate Event" data-ml="നിർഭാഗ്യകരമായ സംഭവം">The Unfortunate Event</label>
+                <select id="event-select" class="w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-200 text-gray-700">
+                    <option value="" disabled selected data-en="Select an event..." data-ml="ഒരു സംഭവം തിരഞ്ഞെടുക്കുക...">Select an event...</option>
+                    <option value="a sudden flash mob" data-en="a sudden flash mob" data-ml="ഒരു പെട്ടന്നുള്ള ഫ്ലാഷ് മോബ്">a sudden flash mob</option>
+                    <option value="a flock of angry pigeons" data-en="a flock of angry pigeons" data-ml="കോപാകുലരായ പ്രാവുകളുടെ ഒരു കൂട്ടം">a flock of angry pigeons</option>
+                </select>
+            </div>
+
+            <!-- Dropdown for the Unexpected Consequence -->
+            <div>
+                <label for="consequence-select" class="block text-gray-600 font-semibold mb-2" data-en="The Unexpected Consequence" data-ml="അപ്രതീക്ഷിത ഫലം">The Unexpected Consequence</label>
+                <select id="consequence-select" class="w-full p-3 border border-gray-300 rounded-xl shadow-sm focus:ring-2 focus:ring-purple-400 focus:border-purple-400 transition-all duration-200 text-gray-700">
+                    <option value="" disabled selected data-en="Select a consequence..." data-ml="ഒരു ഫലം തിരഞ്ഞെടുക്കുക...">Select a consequence...</option>
+                    <option value="it caused a temporary time loop" data-en="it caused a temporary time loop" data-ml="അത് ഒരു താൽക്കാലിക ടൈം ലൂപ്പിന് കാരണമായി">it caused a temporary time loop</option>
+                    <option value="it turned my phone into a turnip" data-en="it turned my phone into a turnip" data-ml="അത് എൻ്റെ ഫോണിനെ ഒരു ടർണിപ്പാക്കി മാറ്റി">it turned my phone into a turnip</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Button to generate the alibi -->
+        <button id="generate-button" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-200 shadow-md transform hover:scale-105" data-en="Generate Alibi" data-ml="അലിബി സൃഷ്ടിക്കുക">
+            Generate Alibi
+        </button>
+
+        <!-- Output area for the generated alibi -->
+        <div id="output-container" class="mt-8 p-6 bg-purple-50 rounded-xl border border-dashed border-purple-200 text-gray-800 text-lg italic hidden">
+            <p id="alibi-output" class="text-center">Your alibi will appear here...</p>
+        </div>
+        
+    </div>
+
 </body>
 </html>

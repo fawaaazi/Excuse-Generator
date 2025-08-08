@@ -1,0 +1,6 @@
+/* Import a web font that supports the Malayalam script */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans Malayalam', 'Inter', sans-serif;
+}
