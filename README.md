@@ -23,35 +23,29 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [html]
--[css]
--[javascript]
+- [html5-css-vanilla-javascript]
 - [tailwindcss]
-- [google gemini api]
+- [goolegeminiapi]
 
 ### Implementation
 For Software:
 # Run
-[https://fawaaazi.github.io/Excuse-Generator/]
+https://fawaaazi.github.io/Excuse-Generator/
 
 ### Project Documentation
-For Software:
 
-# Screenshots (Add at least 3)
-
-![Screenshot1](Add screenshot 1 here with proper name)
+![Screenshot1]
 <img width="3188" height="1202" alt="frame (3)" src="/screenshots/Ui-image-eng.jpg" />
-*Add caption explaining what this shows*
+*UI of The Project*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-<img width="3188" height="1202" alt="frame (3)" src="/screenshots/generating-excuess-eng.jpg" />
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2]
 <img width="3188" height="1202" alt="frame (3)" src="/screenshots/generated-excues-eng.jpg" />
+*Excues Generated in English*
 
+![Screenshot3]
 <img width="3188" height="1202" alt="frame (3)" src="/screenshots/generated-excues-mal.jpg" />
+*Excues Generated in Malayalam*
+
 ## Team Contributions
 - [Jinshad M]: [Idea Proposed & Created The Ui]
 - [Muhammed Fawas K]: [api connect & build the full function]
