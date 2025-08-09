@@ -164,7 +164,7 @@ Now, using that exact style, translate the following English excuse. Provide ONL
 languageSelect.addEventListener('change', () => {
     const lang = languageSelect.value;
     promptTextarea.placeholder = lang === 'ml' ? 'ഉദാ: പാൽ വാങ്ങാൻ മറന്നു...' : 'e.g., I forgot to buy milk...';
-    generateButton.textContent = lang === 'ml' ? 'അലിബി ഉണ്ടാക്കുക' : 'Generate Alibi';
+    generateButton.textContent = lang === 'ml' ? 'നിങ്ങളുടെ തികഞ്ഞ ഒഴികഴിവ് സൃഷ്ടിക്കുക' : 'Generate Alibi';
     document.getElementById('language-label').textContent = lang === 'ml' ? 'ഭാഷ:' : 'Language:';
 });
 
